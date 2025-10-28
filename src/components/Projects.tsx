@@ -118,37 +118,17 @@ const Projects = () => {
                   </div>
 
                   <div className="flex gap-3">
-                    <Button
-                      variant="default"
-                      size="sm"
-                      className="flex-1 bg-blue-600 hover:bg-blue-700"
-                      asChild
-                    >
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Live Demo
-                      </a>
-                    </Button>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex-1"
-                      asChild
-                    >
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+  <Button
+    variant="default"
+    size="sm"
+    className="w-full bg-blue-600 hover:bg-blue-700"
+    asChild
+  >
+    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+      <ExternalLink className="w-4 h-4 mr-2" />
+      Live Demo
+    </a>
+  </Button>
+</div>
 
-export default Projects;
+ 
